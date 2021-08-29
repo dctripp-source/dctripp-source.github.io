@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Danijel Curlic</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    
+    <div class="background">
+         
+        <div class="nav">
+            <a class="a active" href="#">HOME</a>
+            <a class="b" href="#">ABOUT ME</a>
+            <a class="c" href="#">PROJECTS</a>
+            <a class="d" href="#">CONTACT ME</a>
+        </div>
+        
+
+        <div class="content">
+            <div class="home">
+
+            <h1>I am Danijel Curlic</h1>
+            <h3>Web developer, Game developer</h3>
+
+        </div>
+
+        <div class="aboutme">
+                
+
+                <p>
+                    Most of my time I design and build digital products.</br>
+                     I create Android and Windows applications, as well Databases and sometimes I am full-stack developer </br>
+                     I create games using Unity Engine and educational and fun games in Roblox Studio.                  
+                </p>
+
+                <p>I don't like to define myself by the work I've done. </br> 
+                    I define myself by the work I want to do. Skills can be taught, personality is inherent.</br>  I prefer to keep learning, continue challenging myself, and do interesting things that matter.</br> 
+                    Fueled by high energy levels and boundless enthusiasm, I'm easily inspired and more then willing to follow my </br> fascinations wherever they take me. </br>  </br>
+                    I'm passionate, expressive, multi-talented spirit with a natural ability to entertain and inspire.</br>  I'm never satisfied to just come up with ideas. </br> 
+                    Instead I have an almost impulsive need to act on them.</p>
+
+                    <p>
+                        My abundant energy fuels me in the pursuit of many interests, hobbies, areas of study and artistic endeavors. </br>
+                         I'm a fast learner, able to pick up new skills and juggle different projects and roles with relative ease.  </br> </br>
+                         I like to develop expertise in a number of areas over the course of my life and career. </br>
+                            I'm a people-person with deep emotions and empathy, a natural storyteller.  </br> </br>
+                            I'm able to inspire and I'm at my best when I'm sharing my creative expressions with others. </br> 
+                            Feel free to get in touch by any means of communication.
+                    </p>
+                
+            </div>
+
+            <div class="gallery">
+
+                <div class="prtext">
+                
+                    <p>
+                        Source: Dark is a game for Windows platform.  </br>
+                        It is survival game with a lot of quick time events and puzzles. </br>
+                        Source: Dark is work-in-progress game that will be available in near future. <br> <br>
+                    </p>
+
+                    <p>Skynet is a work-in-progress game made in Roblox Studio and it is action game. </br>
+                        Players will expierience exciting storyline and events as well as free roam to chat or chill with their friends </br>
+                        in an amazing Neon City.
+                    </p>
+
+                    
+
+                </div>
+                    
+                <div class="image">
+                    
+                    <img src="img/skynet1.png"/> 
+                </div>
+
+                <div class="image">
+                    <img src="img/skynet3.png"/> 
+                </div>
+                <div class="image">
+                    <img src="img/skynet2.png"/> 
+                </div>
+                <div class="image">
+                    <img src="img/skynet4.png"/> 
+                </div>
+                <div class="image">
+                    <img src="img/skynet5.png"/> 
+                </div>
+                <div class="image">
+                    <img src="img/skynet6.png"/> 
+                </div>
+                </div>
+        
+                <div class="contactme">
+                    <div class="contactform">
+                        <form action="" method="post">
+                            <input type="text"name="" class="inputtext" placeholder="First Name">
+                            <input type="text"name="" class="inputtext" placeholder="Last Name">
+                            <input type="text"name="" class="inputtext" placeholder="Your email">
+                            <textarea cols="4" rows="6" class="inputmessage" placeholder="Your Message..."></textarea>
+                            <input type="button" name="" class="submitbutton" value="Submit">
+                        </form>
+                </div>
+                </div>
+
+        
+    </div>        
+   
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+
+        $(document).ready(function(){
+            $('a').click(function(){
+               //alert('test test');
+                var selected = $(this);
+                $('a').removeClass('active');
+                $(selected).addClass('active'); 
+            });
+
+        var $a = $('.a'),
+        $b = $('.b'),
+        $c = $('.c'),
+        $d = $('.d'),
+        $home = $('.home'),
+        $aboutme = $('.aboutme'),
+        $gallery = $('.gallery'),
+        $contactme = $('.contactme');
+
+        $a.click(function(){
+            $home.fadeIn();
+            $aboutme.fadeOut();
+            $gallery.fadeOut();
+            $contactme.fadeOut();
+        });
+        $b.click(function(){
+            $aboutme.fadeIn();
+            $home.fadeOut();
+            $gallery.fadeOut();
+            $contactme.fadeOut();
+        });
+        $c.click(function(){
+            $gallery.fadeIn();
+            $home.fadeOut();
+            $aboutme.fadeOut();
+            $contactme.fadeOut();
+        });
+        $d.click(function(){
+            $contactme.fadeIn();
+            $home.fadeOut();
+            $aboutme.fadeOut();
+            $gallery.fadeOut();
+        });
+     });
+
+     console.log("Created by Danijel Curlic");
+        </script>
+
+</body>
+</html>
